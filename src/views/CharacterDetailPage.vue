@@ -30,7 +30,7 @@
 
 <script>
 import axios from 'axios'
-import md5 from 'md5'
+import { apiConfig } from '../config/apiConfig';
 
 export default {
 data() {
@@ -41,10 +41,7 @@ return {
 },
 async created() {
 const id = this.$route.params.id
-const publicKey = 'bdc606f1b1db98626ed37760361b7ec5'
-const privateKey = '0174e24a05dc6c3fc8dc3735dd5c8db984d099a7'
-const timestamp = Number(new Date())
-const hash = md5(timestamp + privateKey + publicKey)
+const { publicKey, timestamp, hash } = apiConfig;
 
 // Buscar os dados do personagem
 const characterResponse = await axios.get(`https://gateway.marvel.com/v1/public/characters/${id}`, {
