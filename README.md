@@ -79,4 +79,4 @@ The UI design and style of this project adhere to the Marvel UI Style Guide. Ref
 1. Clone the repository from GitHub:
 
    ```bash
-   git clone https://github.com/your-username/marvel-directory.git
+   git clone https://github.com/talyssonemanoel/marvel-project.git
