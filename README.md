@@ -4,6 +4,34 @@
 
 **Note**: This project was created as part of the application process for a Front-End position at Bee Delivery.
 
+## Configuration
+
+Before running the application, make sure to provide your Marvel API keys in the `apiConfig.js` file located in the `src/config` directory. You need to supply your public and private keys to authenticate with the Marvel API. Here's how to set it up:
+
+1. Navigate to the `src/config` directory in your project.
+
+2. Create a file named `apiConfig.js` if it doesn't already exist.
+
+3. Inside `apiConfig.js`, define your Marvel API keys as follows:
+
+```javascript
+// src/config/apiConfig.js
+
+import md5 from 'md5';
+
+const publicKey = 'SuaChavePública';
+const privateKey = 'SuaChavePrivada';
+const timestamp = Number(new Date());
+const hash = md5(timestamp + privateKey + publicKey);
+
+export const apiConfig = {
+  publicKey,
+  privateKey,
+  timestamp,
+  hash,
+};
+
+Replace 'SuaChavePública' and 'SuaChavePrivada' with your actual Marvel API keys. Ensure that you keep these keys confidential.
 
 ## Features
 
