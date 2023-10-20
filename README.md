@@ -1,24 +1,54 @@
-# marvel-project
+# Marvel Directory - Vue.js Single-Page Application
 
-## Project setup
-```
-npm install
-```
+**Marvel Directory** is a single-page application built with Vue3.js and Vue Router4, which consumes Marvel's API to provide information about characters, comics, events, and more. This project features a responsive design, following the Marvel UI Style Guide, and includes several bonus features. It's a great resource for Marvel fans to explore their favorite characters and comics.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**Note**: This project was created as part of the application process for a Front-End position at Bee Delivery.
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Features
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### General Features
+- Responsive design for both web and mobile versions.
+- Code reusability through Vue3.js components.
+- UI styling with Bootstrap 5.3 and icons from [HERE](https://ionic.io/ionicons).
+- Follows Bootstrap 5.3 grid system.
+
+### Pages
+1. **Welcome Page**
+   - Displays a welcome message: "WELCOME TO MARVEL'S DIRECTORY."
+
+2. **Characters Page**
+   - Shows a list of characters from Marvel's API with thumbnails and names.
+   - Users can click on a character to view detailed information on the Character Detail Page.
+
+3. **Character Detail Page**
+   - Loaded when a user clicks on a character.
+   - Displays the character's thumbnail, name, description, and list of associated comics.
+
+4. **Comics Page**
+   - Shows a list of comics from Marvel's API with thumbnails, titles, and the number of pages.
+
+5. **Events Page**
+   - Displays a list of events from Marvel's API with thumbnails, titles, descriptions, and dates.
+
+6. **Contact Page**
+   - Allows users to provide their name, email, phone, and a message.
+   - Validates email and phone number patterns.
+   - Form fields are validated on leaving the input.
+   - The "Send" button is disabled if any validation fails.
+   - Upon successful validation, clicking "Send" triggers an alert with a thank you message.
+
+## UI Style Guide
+
+The UI design and style of this project adhere to the Marvel UI Style Guide. Refer to the provided web and mobile prototypes in Figma for design details.
+
+- [Web Prototype](https://www.figma.com/proto/IivV2Vq6MJ6a24usioCuUk/Prot%C3%B3tipos-teste-Frontend---Bee-Delivery?type=design&node-id=212-63&viewport=1176%2C813%2C0.33&t=qEb3f4U1t5a4suOv-0&scaling=scale-down&starting-point-node-id=212%3A45)
+- [Mobile Prototype](https://www.figma.com/file/b21cB6Ph702fL11DqwoyWP/Teste-Frontend---Bee-Delivery?type=design&node-id=7-10&mode=design&t=kfMaOsZL9enV94hq-0)
+
+
+### Installation
+
+1. Clone the repository from GitHub:
+
+   ```bash
+   git clone https://github.com/your-username/marvel-directory.git
