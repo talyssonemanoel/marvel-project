@@ -30,7 +30,7 @@ export const apiConfig = {
   timestamp,
   hash,
 };
-
+```
 Replace 'SuaChavePública' and 'SuaChavePrivada' with your actual Marvel API keys. Ensure that you keep these keys confidential.
 
 ## Features
